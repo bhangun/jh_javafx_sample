@@ -1,4 +1,4 @@
-package com.mycompany.myapp.shared.dashboard
+package com.mycompany.myapp.view
 
 import javafx.scene.chart.CategoryAxis
 import javafx.scene.chart.NumberAxis

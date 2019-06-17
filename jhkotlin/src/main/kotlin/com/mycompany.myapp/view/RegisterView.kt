@@ -1,4 +1,4 @@
-package com.mycompany.myapp.shared.account
+package com.mycompany.myapp.view
 
 
 

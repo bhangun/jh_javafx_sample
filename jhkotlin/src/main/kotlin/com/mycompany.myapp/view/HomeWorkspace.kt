@@ -1,11 +1,14 @@
-package com.mycompany.myapp.shared.home
+package com.mycompany.myapp.view
 
+import com.mycompany.myapp.controller.HomeController
+import com.mycompany.myapp.controller.LoginController
 import javafx.scene.control.Menu
 import tornadofx.*
 
 
 class HomeWorkspace : Workspace("p05") {
     val homeController : HomeController by inject()
+
     override fun onDock() {
         primaryStage.width = 1024.0
         primaryStage.height = 768.0

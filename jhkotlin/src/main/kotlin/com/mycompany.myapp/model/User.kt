@@ -1,4 +1,4 @@
-package com.mycompany.myapp.shared.account
+package com.mycompany.myapp.model
 
 import javafx.beans.property.BooleanProperty
 import javafx.beans.property.Property

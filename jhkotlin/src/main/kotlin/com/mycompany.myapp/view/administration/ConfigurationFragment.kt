@@ -1,4 +1,4 @@
-package com.mycompany.myapp.shared.administration
+package com.mycompany.myapp.view.administration
 
 import tornadofx.*
 

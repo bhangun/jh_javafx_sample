@@ -1,15 +1,17 @@
-package com.mycompany.myapp.shared.login
+package com.mycompany.myapp.controller
 
-import com.mycompany.myapp.shared.BaseController
-import com.mycompany.myapp.shared.home.HomeWorkspace
-import com.mycompany.myapp.shared.account.RegisterView
+import com.mycompany.myapp.utils.BaseController
+import tornadofx.*
+import javax.json.JsonObject
 import javafx.application.Platform
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleStringProperty
-import com.mycompany.myapp.shared.account.UserController
-import com.mycompany.myapp.shared.account.UserForm
-import tornadofx.*
-import javax.json.JsonObject
+
+import com.mycompany.myapp.view.HomeWorkspace
+import com.mycompany.myapp.view.RegisterView
+import com.mycompany.myapp.view.LoginView
+import com.mycompany.myapp.view.UserForm
+
 
 class LoginController : Controller() {
     val base: BaseController by inject()

@@ -1,11 +1,9 @@
-package com.mycompany.myapp.shared.styles
+package com.mycompany.myapp.styles
 
-import javafx.scene.paint.Color
-import javafx.scene.paint.Color.*
 import javafx.scene.text.FontWeight
 import tornadofx.*
 
-class Styles : Stylesheet() {
+class DefaultStyles : Stylesheet() {
     companion object {
         val baseStyle by cssclass()
         val heading by cssclass()

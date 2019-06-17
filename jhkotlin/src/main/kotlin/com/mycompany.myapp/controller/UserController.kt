@@ -1,12 +1,28 @@
-package com.mycompany.myapp.shared.account
+package com.mycompany.myapp.controller
 
 import javafx.collections.ObservableList
-import com.mycompany.myapp.shared.BaseController
+import com.mycompany.myapp.utils.BaseController
+import com.mycompany.myapp.model.User
 import tornadofx.*
+import tornadofx.EventBus.RunOn.*
+
+
+object UserRequest : FXEvent(BackgroundThread)
+
+class FetchUserEvent(val users:ObservableList<User>) : FXEvent()
+
 
 class UserController : Controller() {
 
+    init {
+
+        subscribe<UserRequest> {
+            val usersList = getAllUsers()
+            fire(FetchUserEvent(usersList))
+        }
+    }
     val base: BaseController by inject()
+
 
     /**
      * GET getAccount
@@ -73,25 +89,26 @@ class UserController : Controller() {
      */
     var API_USER= base.BASE_URI+"users/"//{login}
 
-    fun createUsers(users: User){
-        base.api.post(API_USERS,users)
+    fun createUser(user: User){
+        base.api.post(API_USERS,user)
     }
 
     fun getAllUsers(): ObservableList<User> {
         return  base.api.get(API_USERS).list().toModel()
     }
 
-    fun getUsers(user : User): ObservableList<User> {
+    fun getUser(user : User): ObservableList<User> {
         return  base.api.get(API_USERS, user).list().toModel()
     }
 
-    fun updateUsers(users: User){
-        base.api.put(API_USERS,users)
+    fun updateUser(user: User){
+        base.api.put(API_USERS,user)
     }
 
     fun deleteUser(login: String){
         base.api.put(API_USER+"$login")
     }
 }
+
 
 

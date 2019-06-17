@@ -1,4 +1,4 @@
-package com.mycompany.myapp.shared
+package com.mycompany.myapp.utils
 
 import tornadofx.*
 

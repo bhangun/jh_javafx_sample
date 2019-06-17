@@ -1,7 +1,7 @@
-package com.mycompany.myapp.shared.account
+package com.mycompany.myapp.controller
 
 
-import com.mycompany.myapp.shared.login.LoginController
+import com.mycompany.myapp.view.RegisterView
 import tornadofx.Controller
 
 class RegisterController : Controller() {

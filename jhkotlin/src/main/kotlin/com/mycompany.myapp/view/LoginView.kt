@@ -1,5 +1,6 @@
-package com.mycompany.myapp.shared.login
+package com.mycompany.myapp.view
 
+import com.mycompany.myapp.controller.LoginController
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.event.EventHandler
@@ -9,9 +10,8 @@ import javafx.scene.control.TextField
 import javafx.scene.control.Hyperlink
 import javafx.scene.layout.GridPane
 import javafx.util.Duration
-import com.mycompany.myapp.shared.home.HomeWorkspace
-import com.mycompany.myapp.shared.styles.LoginStyles.Companion.loginStyle
-import com.mycompany.myapp.shared.styles.Styles.Companion.baseStyle
+import com.mycompany.myapp.styles.LoginStyles.Companion.loginStyle
+import com.mycompany.myapp.styles.DefaultStyles.Companion.baseStyle
 import tornadofx.*
 
 class LoginView : View() {
@@ -60,9 +60,6 @@ class LoginView : View() {
                     }
                 }
             }
-
-
-
         }
     }
 

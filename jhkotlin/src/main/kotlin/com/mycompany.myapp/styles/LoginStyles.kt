@@ -1,7 +1,6 @@
-package com.mycompany.myapp.shared.styles
+package com.mycompany.myapp.styles
 
 import javafx.scene.paint.Color
-import javafx.scene.text.FontWeight
 import tornadofx.Stylesheet
 import tornadofx.box
 import tornadofx.cssclass

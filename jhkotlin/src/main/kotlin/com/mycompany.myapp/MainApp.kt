@@ -1,9 +1,10 @@
 package com.mycompany.myapp
 
 
-import com.mycompany.myapp.shared.styles.Styles
-import com.mycompany.myapp.shared.login.LoginView
+
+import com.mycompany.myapp.styles.DefaultStyles
+import com.mycompany.myapp.view.LoginView
 import tornadofx.*
 
 
-class MainApp : App(LoginView::class, Styles::class)
+class MainApp : App(LoginView::class, DefaultStyles::class)

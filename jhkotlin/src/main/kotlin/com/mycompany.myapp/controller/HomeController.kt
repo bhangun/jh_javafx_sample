@@ -1,8 +1,15 @@
-package com.mycompany.myapp.shared.home
+package com.mycompany.myapp.controller
 
+import com.mycompany.myapp.view.UserFragment
+import com.mycompany.myapp.view.administration.ConfigurationFragment
+import com.mycompany.myapp.view.administration.HealthFragment
+import com.mycompany.myapp.view.administration.MetricFragment
+import com.mycompany.myapp.view.DashboardFragment
 import tornadofx.*
 
 class HomeController : Controller() {
+
+    object HomeEvent : FXEvent(EventBus.RunOn.BackgroundThread)
 
     init{
 
